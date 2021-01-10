@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\NavBar",
+    "\\src\\Orders"
   ],
-  "SelectedNode": "\\src\\Hello.tsx",
+  "SelectedNode": "\\src\\Orders\\OrderSummary.tsx",
   "PreviewInSolutionExplorer": false
 }
