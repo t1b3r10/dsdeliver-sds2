@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\OrderDetails"
   ],
-  "SelectedNode": "\\src\\api.ts",
+  "SelectedNode": "\\src\\Routes.tsx",
   "PreviewInSolutionExplorer": false
 }

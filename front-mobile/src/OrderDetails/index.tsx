@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { StyleSheet, View, Text, Alert } from 'react-native';
+import { StyleSheet, View, Text, Alert, Linking } from 'react-native';
 import Header from '../Header';
 import { Order } from '../types';
 import OrderCard from '../OrderCard';
@@ -40,6 +40,10 @@ function OrderDetails({ route }: Props) {
         navigation.navigate('Orders');
     }
 
+    const handleStartNavigation = () => {
+        Linking.openURL(`https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${order.latitude},${order.longitude}`);
+
+    }
 
     return (
         <>
@@ -47,7 +51,7 @@ function OrderDetails({ route }: Props) {
             <View style={styles.container}>
                 <OrderCard order={order} />
 
-                <RectButton style={styles.button} onPress={handleOnPress}>
+                <RectButton style={styles.button} onPress={handleStartNavigation}>
                     <Text style={styles.buttonText}>
                         INICIAR NAVEGACAO
                     </Text>
